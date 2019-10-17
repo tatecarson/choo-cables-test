@@ -1,6 +1,8 @@
 var html = require('choo/html')
-var Viz = require('../components/button.js')
+var Viz = require('../components/viz.js')
 var viz = new Viz()
+
+
 
 var TITLE = 'choo-test - main'
 

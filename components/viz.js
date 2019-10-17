@@ -1,7 +1,6 @@
-// button.js
 var Nanocomponent = require('nanocomponent')
 var html = require('nanohtml')
-const cab = require('./patch/js/patch.js'); 
+const cab = require('./patch/js/patch.js');
 
 class Button extends Nanocomponent {
   constructor() {
