@@ -8,11 +8,16 @@
     "inspect": "bankai inspect index.js",
     "start": "bankai start index.js",
     "test": "standard && npm run test-deps",
-    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons",
+    "clean": "rm -rf dist/* && rm -rf node_modules/",
+    "patchup": "rm -rf ./components/patch/* && cables -c -i -d './components/patch' -e iwaEwm"
   },
   "dependencies": {
+    "@cables/cables": "^0.4.0",
     "choo": "^7.0.0",
     "choo-service-worker": "^3.0.0",
+    "nanocomponent": "^6.5.2",
+    "nanohtml": "^1.8.1",
     "sheetify": "^8.0.0",
     "tachyons": "^4.11.1"
   },
